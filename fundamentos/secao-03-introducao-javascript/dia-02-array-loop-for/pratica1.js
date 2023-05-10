@@ -1,3 +1,4 @@
+// IF/ELSE
 /*Para fixar
 Para fixar, faça os próximos exercícios:
 
@@ -18,3 +19,28 @@ let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
 menu.push('Contato')
 
 console.log(menu);
+
+//FOR
+//Para fixar, faça o exercício a seguir:
+
+let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
+for (let index = 0; index < groceryList.length; index += 1) {
+  console.log(groceryList[index]);
+}
+//FOR/OF
+//Utilize o for/of para imprimir os elementos da lista names com o console.log():
+let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+
+for (let index of names){
+  console.log(index);
+}
+
+// WHILE
+
+let counter = 0;
+
+while(counter !== 5) {
+  counter += 1;
+}
+
+
