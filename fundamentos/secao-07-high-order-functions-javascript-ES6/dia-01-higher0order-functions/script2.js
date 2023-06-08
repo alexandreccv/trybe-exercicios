@@ -15,7 +15,7 @@ const lotteryResult = (myNumber, callback) => {
 };
 
 console.log(lotteryResult(4, numberChecker));
-
+ 
 // outra forma 
 
 /* const numberChecker = (myNumber, number) => myNumber === number;
@@ -26,10 +26,11 @@ const lotteryResult = (myNumber, callback) => {
 
   return {
     number: number,
-    message: won ? 'Lucky day, you won!' : 'Try Again!'
+    message: won ? 'Dia de sorte, voce venceu!' : 'Tente Novamente!'
   };
 };
 
 const result = lotteryResult(4, numberChecker);
-console.log(result.number); // Número sorteado
-console.log(result.message); // Mensagem de resultado */
+console.log("Número sorteado:", result.number);
+console.log("Resultado:", result.message);
+ */
