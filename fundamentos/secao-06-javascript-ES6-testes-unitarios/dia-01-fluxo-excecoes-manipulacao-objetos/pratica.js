@@ -38,6 +38,7 @@ const showPromo = (name, number) => {
     checkName(name);
     checkNumber(parseInt(number));
     const productObject = checkPromo(number);
+    checkValidRange(number);
 
     firstText.innerHTML = `Boas-vindas, ${name}!`;
     secondText.innerHTML = `A promoção do dia é: 
@@ -53,11 +54,12 @@ const checkName = (name) => {
     throw new Error('É necessário digitar um nome válido');
   }
 }
-// Segunda parte
-/**const checkNumber = (number) => {
-  return promo[number - 1];
-}*/
-// Segunda parte
+const checkValidRange = (number) => {
+  if (number < 1 || number > 10) {
+    throw new Error('É necessário digitar um número entre 1 e 10');
+  }
+}
+
 const checkNumber = (number) => {
   if (isNaN(number)) {
     throw new Error('É necessário digitar um número');
@@ -71,3 +73,15 @@ const checkPromo = (number) => {
     }
   }
 }
+
+const calculateAverage = (n1, n2, n3, n4) => {
+  try {
+    validateAverage(n1, n2, n3, n4);
+    let sum = n1 + n2 + n3 + n4;
+    let media = sum / 4;
+    return media;
+  } catch (error) {
+    return error.message;
+  }  
+}
+console.log(calculateAverage(5, 6, 7, '8')) // Atenção! Os valores devem ser numéricos
