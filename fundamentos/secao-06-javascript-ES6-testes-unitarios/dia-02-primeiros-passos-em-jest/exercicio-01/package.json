@@ -1,0 +1,15 @@
+{
+  "name": "exercicio-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "removeItem.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.2"
+  }
+}
